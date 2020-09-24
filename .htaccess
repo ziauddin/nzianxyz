@@ -49,7 +49,7 @@
     # (5)
     # RewriteOptions <options>
     RewriteCond %{REQUEST_FILENAME} !-f
-    n  RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)\.html$ /$1 [L,R=301]
 
 </IfModule>
