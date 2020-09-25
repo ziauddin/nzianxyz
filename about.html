@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="US-en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#e2e8f0"/>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico"/>
+    <meta content="About Full stack web application developer NZIAN" property="og:title"/>
+    <meta content="Ziauddin Robin is a full stack web application developer from dhaka bangladesh. Working with PHP python GO programming language. I am working as a web developer for years. In leisure I like to travel different places specially country side and mobile photography is my hobby" property="description"
+/>
+    <meta content="Ziauddin Robin is a full stack web application developer from dhaka bangladesh. Working with PHP python GO programming language. I am working as a web developer for years. In leisure I like to travel different places specially country side and mobile photography is my hobby" property="og:description"
+/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nzian.xyz">
+    <meta name="twitter:creator" content="@ziauddin47">
+    <meta name="twitter:title" content="Full stack web application developer">
+    <meta name="twitter:description" content="Ziauddin Robin full stack web application developer from dhaka bangladesh. Working with PHP python GO programming language. Develop web based application and software.#vue #react #javascript #laravel #slim #mysql #postgres #flask">
+    <meta content="website" property="og:type"/>
+    <meta content="Ziauddin Robin" name="author"/>
+    <meta content="nzianit@gmail.com" name="og:email"/>
+    <meta content="Full stack developer Ziauddin Robin" property="og:site_name"/>
+    <meta content="BD_DHK" property="geo:region"/>
+    <meta content="Banasree" property="geo:placename"/>
+    <meta content="23.7621318, 90.4240397" property="geo:position"/>
+    <meta name="twitter:image" content="./assets/img/ziauddin-robin-twitter-card.png">
+    <meta content="./assets/img/ziauddin-robin-twitter-card.png" property="og:image">
+    <meta href="https://nzian.xyz" rel="canonical"/>
+    <meta href="/" rel="preconnect" crossorigin/>
+    <script type='application/ld+json'>
+      {
+        "@context": "http://www.schema.org",
+        "@type": "Website",
+        "name": "Nzian xyz",
+        "url": "https://nzian.xyz",
+        "email": "nzianit@gmail.com",
+        "priceRange": "£",
+        "sameAs": [
+          "https://www.facebook.com/devnzian", "https://twitter.com/Ziauddin47", "https://www.instagram.com/devnzian"
+        ],
+        "logo": "https://nzian.xyz/assels/img/nzian-xyz.png",
+        "image": "https://nzian.xyz/assets/img/ziauddin-robin-twitter-card.png",
+        "description": "Ziauddin Robin is a full stack web application developer from dhaka bangladesh. Working with PHP python GO programming language. I am working as a web developer for years. In leisure I like to travel different places specially country side and mobile photography is my hobby",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "House no : 4, road 6 Block F",
+          "addressLocality": "Banasree",
+          "addressRegion": "Dhaka",
+          "postalCode": "1212",
+          "addressCountry": "Bangladesh"
+        },
+        "telephone": "+8801841908292",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "23.7621318",
+          "longitude": "90.4240397"
+        },
+        "openingHours": "Su, Mo, Tu, We, Th 07:00-22:00",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer support & query",
+          "telephone": "+8801841908292"
+        }
+      }
+    </script>
+    <style>
+      .has-error {
+        border: solid red;
+      }
+
+      .has-success {
+        border: solid green;
+      }
+    </style>
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png"/>
+    <link rel="stylesheet" href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/css/tailwind.css"/>
+    <title>About Full Stack Web Application Developer NZIAN </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178492675-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178492675-1');
+</script>
+
+<!-- Facebook Pixel Code -->
+    <!--<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '657539618206817');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=657539618206817&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+  </head>
+
+  <body class="text-gray-800 antialiased">
+    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+          <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="https://www.nzian.xyz">NZIAN</a>
+          <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                    type="button" name="toggle-nav" onclick="toggleNavbar('example-collapse-navbar')">
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-collapse-navbar">
+          <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://www.nzian.xyz/about">
+                <i
+                class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
+              About</a>
+            </li>
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://www.nzian.xyz/hire">
+                <i
+                class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
+              Hire</a>
+
+            </li>
+          </ul>
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://www.facebook.com/devnzian"  rel="noopener norefferer" target="_blank">
+                <i
+                class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "></i>
+                <span
+                class="lg:hidden inline-block ml-2">Share</span></a>
+            </li>
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://twitter.com/Ziauddin47" rel="noopener norefferer" target="_blank">
+                <i
+                class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "></i>
+                <span
+                class="lg:hidden inline-block ml-2">Tweet</span></a>
+            </li>
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://github.com/ziauddin"  rel="noopener norefferer" target="_blank">
+                <i
+                class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "></i>
+                <span
+                class="lg:hidden inline-block ml-2">Star</span></a>
+            </li>
+            <li class="flex items-center">
+              <button class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" name="" style="transition: all 0.15s ease 0s;" data-phone="+8801841908292">
+                <i class="fas fa-phone"></i> +8801841908292
+            </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="profile-page">
+      <section class="relative block" style="height: 500px;">
+        <div
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          style='background-image: url("./assets/img/header-banner.jpg");'
+        >
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-50 bg-black"
+          ></span>
+        </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px; transform: translateZ(0px);"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-300 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+      </section>
+      <section class="relative py-16 bg-gray-300">
+        <div class="container mx-auto px-4">
+          <div
+            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"
+          >
+            <div class="px-6">
+              <div class="flex flex-wrap justify-center">
+                <div
+                  class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center"
+                >
+                  <div class="relative">
+                    <img
+                      alt="Ziauddin Robin"
+                      src="./assets/img/ziauddin-robin.jpg"
+                      class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                      style="max-width: 150px;"
+/>
+                  </div>
+                </div>
+                <div
+                  class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center"
+                >
+                  <div class="py-6 px-3 mt-32 sm:mt-0">
+                    <a
+                      class="bg-pink-500 active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1"
+                      href="https://nzian.xyz/hire"
+                      style="transition: all 0.15s ease 0s;"
+                    >
+                      Hire Me
+                    </a>
+                  </div>
+                </div>
+                <div class="w-full lg:w-4/12 px-4 lg:order-1">
+                  <div class="flex justify-center py-4 lg:pt-4 pt-8">
+                    <div class="mr-4 p-3 text-center">
+                      <span
+                        class="text-xl font-bold block uppercase tracking-wide text-gray-700"
+                        >273</span
+                      >
+                      <span class="text-sm text-gray-500">Friends</span>
+                    </div>
+                    <div class="mr-4 p-3 text-center">
+                      <span
+                        class="text-xl font-bold block uppercase tracking-wide text-gray-700"
+                        >130</span
+                      >
+                      <span class="text-sm text-gray-500">Photos</span>
+                    </div>
+                    <div class="lg:mr-4 p-3 text-center">
+                      <span
+                        class="text-xl font-bold block uppercase tracking-wide text-gray-700"
+                        >100</span
+                      >
+                      <span class="text-sm text-gray-500">Comments</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center mt-12">
+                <h3
+                  class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2"
+                >
+                  Ziauddin Robin
+                </h3>
+                <div
+                  class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase"
+                >
+                  <i
+                    class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"
+                  ></i>
+                  Banasree, Dhaka
+                </div>
+                <div class="mb-2 text-gray-700 mt-10">
+                  <i class="fas fa-briefcase mr-2 text-lg text-gray-500"></i
+                  >Full Stack Web Application Developer.
+                </div>
+                <div class="mb-2 text-gray-700">
+                  <i class="fas fa-university mr-2 text-lg text-gray-500"></i
+                  >Shahjalal University of Science and Technology
+                </div>
+              </div>
+              <div class="mt-10 py-10 border-t border-gray-300 text-center">
+                <div class="flex flex-wrap justify-center">
+                  <div class="w-full lg:w-9/12 px-4">
+                    <p class="mb-4 text-lg leading-relaxed text-left text-gray-800">
+                     Hi, My name is Ziauddin Robin. I am a computer science graduate, Working as a full stack developer for years. I have been Working with PHP python GO javascript programming language. </p>
+                    <p class="mb-4 text-lg leading-relaxed text-left text-gray-800">
+                     I have been developed <strong>restaurant online ordering solution</strong>, creating websites for personal or <strong>business</strong> purpose, Do many payment gateway integration in different websites, creating rest api for mobile application.</p>
+                    <p class="mb-4 text-lg leading-relaxed text-left text-gray-800">In leisure I like to travel a lot specially countryside and mobile photography is my hobby.
+                    </p>
+                    <a href="https://www.linkedin.com/in/zia-uddin-177437b/" rel="norefferer noopener" class="font-normal text-pink-500"
+                      >Show more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="relative bg-gray-300 pt-8 pb-6">
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+      style="height: 80px; transform: translateZ(0px);">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+            <h5 class="text-lg mt-0 mb-2 text-gray-700">
+            Find me on any of these platforms, I respond as soon as possible.
+          </h5>
+            <div class="mt-6">
+              <button
+              class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button" name="twitter-footer" data-url="https://twitter.com/Ziauddin47">
+                <i class="flex fab fa-twitter"></i>
+              </button>
+              <button class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                                            type="button" name="fb-footer" data-url="https://www.facebook.com/devnzian">
+                <i class="flex fab fa-facebook-square"></i>
+              </button>
+              <button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button" name="insta-footer"
+                                            data-url="https://www.instagram.com/devnzian/">
+                <i class="flex fab fa-instagram"></i>
+              </button>
+              <button class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button" name="github-footer"
+                                            data-url="https://github.com/ziauddin">
+                <i class="flex fab fa-github"></i>
+              </button>
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.nzian.xyz/about">About Me</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.nzian.xyz/blog">Blog</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://github.com/ziauddin"  rel="noopener norefferer" target="_blank">Github</a>
+                  </li>
+                  <!--<li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://www.creative-tim.com/bootstrap-themes/free"
+                      >Free Products</a
+                    >
+                  </li>-->
+                </ul>
+              </div>
+              <div class="w-full lg:w-4/12 px-4">
+                <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other Resources</span>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.linkedin.com/in/zia-uddin-177437b/"  rel="noopener norefferer" target="_blank">Linkedin</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://nzian.xyz/terms">Terms &amp; Conditions</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://nzian.xyz/privacy">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://nzian.xyz/contact">Contact Me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-400"/>
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-600 font-semibold py-1">
+                                    Copyright ©2020 <a href="https://www.nzian.xyz" class="text-gray-600 hover:text-gray-900">NZIAN</a> build with <a href="https://github.com/creativetimofficial/tailwind-starter-kit" class="text-gray-600 hover:text-gray-900"  rel="noopener norefferer" target="_blank">Tailwind Starter Kit
+            </a>.
+                                </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({xfbml: true, version: 'v8.0'});
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) 
+          return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs
+          .parentNode
+          .insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="fb-customerchat" attribution=setup_tool page_id="111062414076850" theme_color="#d4a88c" logged_in_greeting="Welcome to nzianxyz world. Lets discuss about something amazing" logged_out_greeting="Welcome to nzianxyz world. Lets discuss about something amazing"></div>
+  </body>
+  <script>
+    // header mobile nav toggle.
+    function toggleNavbar(collapseID) {
+      document
+        .getElementById(collapseID)
+        .classList
+        .toggle("hidden");
+      document
+        .getElementById(collapseID)
+        .classList
+        .toggle("block");
+    }
+
+    // add event function for url load in a new tab and phone number in a new tab
+
+    function buttonEvent(element) {
+      if (element && "url" in element.dataset) {
+        element.addEventListener('click', function () {
+          window.open(element.dataset.url, '_blank');
+        });
+      } else if (element && "phone" in element.dataset) {
+        element.addEventListener('click', function () {
+          window.open("tel:" + element.dataset.phone, '_blank');
+        })
+      }
+    }
+
+    // have some button which has url and need to open those url in a new tab on click event.
+
+    //first get the element which is clicked
+    const urlButtons = document.querySelectorAll('button[data-url]');
+    const phoneButton = document.querySelector('button[data-phone]');
+    //const sendButton = document.querySelector('button[name=send-message]');
+    //console.log(sendButton);
+    //console.log(phoneButton);
+    // set an click eventlistner to load the url a new tab for urlButton
+    try {
+      urlButtons.forEach(buttonEvent);
+      buttonEvent(phoneButton);
+    } catch (err) {
+      console.log(err);
+    }
+  </script>
+
+</html>

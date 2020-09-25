@@ -1,497 +1,408 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./assets/img/apple-icon.png"
-    />
-    <link
-      rel="stylesheet"
-      href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
-    />
-    <title>NZIAN| Frelanchar Web application developer Blog</title>
-  </head>
-  <body class="text-gray-800 antialiased">
-    <nav
-      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
-    >
-      <div
-        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
-      >
-        <div
-          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
-        >
-          <a
-            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
-            href="https://www.nzian.xyz"
-            >NZIAN</a
-          ><button
-            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-            type="button"
-            onclick="toggleNavbar('example-collapse-navbar')"
-          >
-            <i class="text-white fas fa-bars"></i>
-          </button>
-        </div>
-        <div
-          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
-          id="example-collapse-navbar"
-        >
-          <ul class="flex flex-col lg:flex-row list-none mr-auto">
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="https://www.nzian.xyz/about"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"
-                ></i>
-                About</a
-              >
-            </li>
-             <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="https://www.nzian.xyz/hire"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"
-                ></i>
-                Hire</a>
-              
-            </li>
-          </ul>
-          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="https://www.facebook.com/devnzian" 
-                target="_blank" 
-                ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "
-                ></i
-                ><span class="lg:hidden inline-block ml-2">Share</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+<html lang="US-en">
 
-                href="https://twitter.com/Ziauddin47"
-                target="_blank"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "
-                ></i
-                ><span class="lg:hidden inline-block ml-2">Tweet</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="https://github.com/ziauddin"
-                target="_blank"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "
-                ></i
-                ><span class="lg:hidden inline-block ml-2">Star</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <button
-                class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
-                type="button"
-                style="transition: all 0.15s ease 0s;"
-                data-phone="+8801841908292"
-              >
-                <i class="fas fa-phone"></i> +8801841908292
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <main>
-      <div
-        class="relative pt-16 pb-32 flex content-center items-center justify-center"
-        style="min-height: 75vh;"
-      >
-        <div
-          class="absolute top-0 w-full h-full bg-center bg-cover"
-          style='background-image: url("./assets/img/header-banner.jpg");'
-        >
-          <span
-            id="blackOverlay"
-            class="w-full h-full absolute opacity-75 bg-black"
-          ></span>
-        </div>
-        <div class="container relative mx-auto">
-          <div class="items-center flex flex-wrap">
-            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-              <div class="pr-12">
-                <h1 class="text-white font-semibold text-5xl">
-                 <strong>Freelancer</strong> Web Application developer.
-                </h1>
-                <p class="mt-4 text-lg text-gray-300">
-                  <strong>NZAIN</strong> is my brand name. I am Ziauddin Robin <strong>Freelancer</strong> Web application developer. I am working with web technology. Building API for mobile applications. <strong>E-commerce</strong>,<strong>Business automation software</strong>,<strong>Mobile application</strong> 
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-          style="height: 70px; transform: translateZ(0px);"
-        >
-          <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              class="text-gray-300 fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
-          </svg>
-        </div>
-      </div>
-      <section class="pb-20 bg-gray-300 -mt-24">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap">
-            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
-                  >
-                    <i class="fas fa-award"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Back End development</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    <i class="fas fa-database"></i> <a 
-                    class="text-gray-600 hover:text-gray-900" 
-                    href="https://www.mysql.com/" 
-                    target="_blank" 
-                    rel="noopener norefferer"
-                    >
-                  Mysql</a> and <a 
-                  href="https://www.postgresql.org/" 
-                  target="_blank"
-                  class="text-gray-600 hover:text-gray-900"
-                  rel="norefferer noopener"
-                  >postgresql</a>.<br/>
-                    <i class="fas fa-language"></i> <a 
-                    href="https://www.php.net/"
-                    target="_blank"
-                    class="text-gray-600 hover:text-gray-900"
-                    rel="norefferer noopener"
-                    >PHP</a>,  <a 
-                    href="https://www.python.org/"
-                    target="_blank"
-                    class="text-gray-600 hover:text-gray-900"
-                    rel="norefferer noopener"
-                    >python</a> and  <a 
-                    href="https://golang.org/"
-                    target="_blank"
-                    class="text-gray-600 hover:text-gray-900"
-                    rel="norefferer noopener"
-                    >Go</a> <br/>
-                    <i class="fab fa-php"></i> <a 
-                    href="https://laravel.com/"
-                    target="_blank"
-                    class="text-gray-600 hover:text-gray-900"
-                    rel="norefferer noopener"
-                    >laravel</a>, <a 
-                    href="https://codeigniter.com/"
-                    target="_blank"
-                    class="text-gray-600 hover:text-gray-900"
-                    rel="norefferer noopener"
-                    >codeigniter</a>, <a 
-                    href="https://cakephp.org/"
-                    target="_blank"
-                    class="text-gray-600 hover:text-gray-900"
-                    rel="norefferer noopener"
-                    >cakePHP</a><br /> 
-                    <i class="fab fa-php"></i> <a 
-                    href="https://jigsaw.tighten.co/"
-                    target="_blank"
-                    class="text-gray-600 hover:text-gray-900"
-                    rel="norefferer noopener"
-                    >Jigsaw</a>, <a 
-                    href="https://wordpress.org/"
-                    target="_blank"
-                    class="text-gray-600 hover:text-gray-900"
-                    rel="norefferer noopener"
-                    >wordpress</a><br/>
-                    <i class="fab fa-python"></i> <a 
-                    href="https://www.djangoproject.com/"
-                    target="_blank"
-                    class="text-gray-600 hover:text-gray-900"
-                    rel="norefferer noopener"
-                    >Django</a>, <a 
-                    href="https://palletsprojects.com/p/flask/"
-                    target="_blank"
-                    class="text-gray-600 hover:text-gray-900"
-                    rel="norefferer noopener"
-                    >flask</a> <br />
-                  </p>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="theme-color" content="#e2e8f0"/>
+        <link rel="shortcut icon" href="./assets/img/favicon.ico"/>
+        <meta content="Full stack web application developer in dhaka bangladesh" property="og:title"/>
+        <meta content="Ziauddin Robin full stack web application developer from dhaka bangladesh. Working with PHP python GO Javascript programming language. Develop web based application and software.#vue #react #javascript #laravel #slim #mysql #postgres #flask" property="description"
+/>
+        <meta content="Ziauddin Robin full stack web application developer from dhaka bangladesh. Working with PHP python GO Javascript programming language. Develop web based application and software.#vue #react #javascript #laravel #slim #mysql #postgres #flask" property="og:description"
+/>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@nzian.xyz">
+        <meta name="twitter:creator" content="@ziauddin47">
+        <meta name="twitter:title" content="Full stack web application developer">
+        <meta name="twitter:description" content="Ziauddin Robin full stack web application developer from dhaka bangladesh. Working with PHP python GO Javascript programming language. Develop web based application and software.#vue #react #javascript #laravel #slim #mysql #postgres #flask">
+        <meta content="website" property="og:type"/>
+        <meta content="Ziauddin Robin" name="author"/>
+        <meta content="nzianit@gmail.com" name="og:email"/>
+        <meta content="Full stack developer Ziauddin Robin" property="og:site_name"/>
+        <meta content="BD_DHK" property="geo:region"/>
+        <meta content="Banasree" property="geo:placename"/>
+        <meta content="23.7621318, 90.4240397" property="geo:position"/>
+        <meta name="twitter:image" content="./assets/img/ziauddin-robin-twitter-card.png">
+        <meta content="./assets/img/ziauddin-robin-twitter-card.png" property="og:image">
+        <meta href="https://nzian.xyz" rel="canonical"/>
+        <meta href="/" rel="preconnect" crossorigin/>
+        <script type='application/ld+json'>
+            {
+                "@context": "http://www.schema.org",
+                "@type": "Website",
+                "name": "Nzian xyz",
+                "url": "https://nzian.xyz",
+                "email": "nzianit@gmail.com",
+                "priceRange": "£",
+                "sameAs": [
+                    "https://www.facebook.com/devnzian", "https://twitter.com/Ziauddin47", "https://www.instagram.com/devnzian"
+                ],
+                "logo": "https://nzian.xyz/assels/img/nzian-xyz.png",
+                "image": "https://nzian.xyz/assets/img/ziauddin-robin-twitter-card.png",
+                "description": "Ziauddin Robin full stack web application developer from dhaka bangladesh. Working with PHP python GO Javascript programming language. Develop web based application and software.#vue #react #javascript #laravel #slim #mysql #postgres #flask",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "House no : 4, road 6 Block F",
+                    "addressLocality": "Banasree",
+                    "addressRegion": "Dhaka",
+                    "postalCode": "1212",
+                    "addressCountry": "Bangladesh"
+                },
+                "telephone": "+8801841908292",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "23.7621318",
+                    "longitude": "90.4240397"
+                },
+                "openingHours": "Su, Mo, Tu, We, Th 07:00-22:00",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "Customer support & query",
+                    "telephone": "+8801841908292"
+                }
+            }
+        </script>
+        <style>
+            .has-error {
+                border: solid red;
+            }
+
+            .has-success {
+                border: solid green;
+            }
+        </style>
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png"/>
+        <link rel="stylesheet" href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"/>
+        <link rel="stylesheet" href="./assets/css/tailwind.css"/>
+        <title>NZIAN| Full Stack Web Application Developer In Dhaka Bangladesh </title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178492675-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-178492675-1');
+        </script>
+
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) 
+                    return;
+                n = f.fbq = function () {
+                    n.callMethod
+                        ? n
+                            .callMethod
+                            .apply(n, arguments)
+                        : n
+                            .queue
+                            .push(arguments)
+                };
+                if (!f._fbq) 
+                    f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s
+                    .parentNode
+                    .insertBefore(t, s)
+            }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '657539618206817');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=657539618206817&ev=PageView&noscript=1"
+/></noscript>
+        <!-- End Facebook Pixel Code -->
+
+    </head>
+
+    <body class="text-gray-800 antialiased">
+        <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+            <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+                <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+                    <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="https://www.nzian.xyz">NZIAN</a>
+                    <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                    type="button" name="toggle-nav" onclick="toggleNavbar('example-collapse-navbar')">
+                        <i class="text-white fas fa-bars"></i>
+                    </button>
                 </div>
-              </div>
-            </div>
-            <div class="w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
-                  >
-                    <i class="fas fa-retweet"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Front End Development</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                   A professional UI/UX team working with me. All my clients UI/UX done by them. But now a days there are lot of UI framework like tailwind, material, bootstrap introdused and some of them are really amazing. So I start working with some of them with javascript framework react, vue with build tools like webpack, parcel, roam.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="pt-6 w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
-                  >
-                    <i class="fas fa-fingerprint"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Mobile API development</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                     <i class="fas fa-database"></i> <a 
-                    class="text-gray-600 hover:text-gray-900" 
-                    href="https://www.mysql.com/" 
-                    target="_blank" 
-                    rel="noopener norefferer"
-                    >
-                  Mysql</a>, <a 
-                  href="https://www.postgresql.org/" 
-                  target="_blank"
-                  class="text-gray-600 hover:text-gray-900"
-                  rel="norefferer noopener"
-                  >postgresql</a>, <a 
-                  href="https://fauna.com/" 
-                  target="_blank"
-                  class="text-gray-600 hover:text-gray-900"
-                  rel="norefferer noopener"
-                  >Fauna</a>.<br/>
-                   <i class="fab fa-php"></i> <a 
-                  href="https://lumen.laravel.com/" 
-                  target="_blank"
-                  class="text-gray-600 hover:text-gray-900"
-                  rel="norefferer noopener"
-                  >Lumen</a>, <a 
-                  href="http://docs.guzzlephp.org/en/5.3/" 
-                  target="_blank"
-                  class="text-gray-600 hover:text-gray-900"
-                  rel="norefferer noopener"
-                  >guzzle</a>, <a 
-                  href="http://www.slimframework.com/" 
-                  target="_blank"
-                  class="text-gray-600 hover:text-gray-900"
-                  rel="norefferer noopener"
-                  >slim</a>, <a 
-                  href="https://www.yiiframework.com/" 
-                  target="_blank"
-                  class="text-gray-600 hover:text-gray-900"
-                  rel="norefferer noopener"
-                  >Yii2</a><br />
-                   <i class="fab fa-python"></i> <a 
-                    href="https://www.djangoproject.com/"
-                    target="_blank"
-                    class="text-gray-600 hover:text-gray-900"
-                    rel="norefferer noopener"
-                    >Django</a>, <a 
-                    href="https://palletsprojects.com/p/flask/"
-                    target="_blank"
-                    class="text-gray-600 hover:text-gray-900"
-                    rel="norefferer noopener"
-                    >flask</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-wrap items-center mt-32">
-            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-              <div
-                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
-              >
-                <i class="fas fa-user-friends text-xl"></i>
-              </div>
-              <h3 class="text-3xl mb-2 font-semibold leading-normal">
-                Working with current technology and maintain best practice
-              </h3>
-              <p
-                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
-              >
-                 My working process is client oriented. I can working in different language like <strong>PHP</strong>, <strong>Python</strong>, <strong>Javascript</strong> or <strong>GO</strong>. If you have any project based on those language then you can hire me.
-              </p>
-              <p
-                class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
-              >
-                You can hire me as full time or part time or contractual basis. But My choice contractual project because in that case get more freedom and most challenging work.
-              </p>
-              <a
-                href="https://www.nzian.xyz/hire"
-                class="font-bold text-gray-800 mt-8"
-                >Lets discuss</a
-              >
-            </div>
-            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600"
-              >
-                <img
-                  alt="Lets discuss about next project"
-                  src="./assets/img/lets-discuss-next-project.jpg"
-                  class="w-full align-middle rounded-t-lg"
-                />
-                <blockquote class="relative p-8 mb-4">
-                  <svg
-                    preserveAspectRatio="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 583 95"
-                    class="absolute left-0 w-full block"
-                    style="height: 95px; top: -94px;"
-                  >
-                    <polygon
-                      points="-30,95 583,95 583,65"
-                      class="text-pink-600 fill-current"
-                    ></polygon>
-                  </svg>
-                  <h4 class="text-xl font-bold text-white">
-                    Lets discuss about next project
-                  </h4>
-                  <p class="text-md font-light mt-2 text-white">
-                    You can contact me several way as below.<br/>
-                    <ul class="text-white">
-                      <li><i class="fas fa-phone"></i> <a class="font-bold" href="tel:+8801841908292">+88018419082</a></li>
-                      <li> <i class="fab fa-whatsapp"></i> <a class="font-bold" href="whatsapp://tel:+8801841908292">+88018419082</a></li>
-                      <li> <i class="fab fa-skype"></i> <a class="font-bold" href="skype:md.ziauddin47?call">md.ziauddin47</a></li>
-                      <li> <i class="fas fa-envelope"></i> <a class="font-bold" href="mailto:nzianit@gmail.com">nzianit@gmail.com</a></li>
+                <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-collapse-navbar">
+                    <ul class="flex flex-col lg:flex-row list-none mr-auto">
+                        <li class="flex items-center">
+                            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://www.nzian.xyz/about">
+                                <i
+                class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
+              About</a>
+                        </li>
+                        <li class="flex items-center">
+                            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://www.nzian.xyz/hire">
+                                <i
+                class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
+              Hire</a>
+
+                        </li>
                     </ul>
-                       
-                   
-                    
-                    
-                  </p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="relative py-20">
-        <div
-          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-          style="height: 80px; transform: translateZ(0px);"
-        >
-          <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              class="text-white fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
-          </svg>
-        </div>
-        <div class="container mx-auto px-4">
-          <div class="items-center flex flex-wrap">
-            <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-              <img
-                alt="Professional Fast Delivery project"
-                class="max-w-full rounded-lg shadow-lg"
-                src="./assets/img/professional-fast-delivery.jpg"
-              />
-            </div>
-            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-              <div class="md:pr-12">
-                <div
-                  class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300"
-                >
-                  <i class="fas fa-rocket text-xl"></i>
+                    <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+                        <li class="flex items-center">
+                            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://www.facebook.com/devnzian" rel="norefferer noopener" target="_blank">
+                                <i
+                class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "></i>
+                                <span
+                class="lg:hidden inline-block ml-2">Share</span></a>
+                        </li>
+                        <li class="flex items-center">
+                            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://twitter.com/Ziauddin47" rel="norefferer noopener" target="_blank">
+                                <i
+                class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "></i>
+                                <span
+                class="lg:hidden inline-block ml-2">Tweet</span></a>
+                        </li>
+                        <li class="flex items-center">
+                            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://github.com/ziauddin" rel="norefferer noopener" target="_blank">
+                                <i
+                class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "></i>
+                                <span
+                class="lg:hidden inline-block ml-2">Star</span></a>
+                        </li>
+                        <li class="flex items-center">
+                            <button class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" name="" style="transition: all 0.15s ease 0s;" data-phone="+8801841908292">
+                                <i class="fas fa-phone"></i> +8801841908292
+            </button>
+                        </li>
+                    </ul>
                 </div>
-                <h3 class="text-3xl font-semibold">...Professional Fast Delivery</h3>
-                <p class="mt-4 text-lg leading-relaxed text-gray-600">
-                  All communication should be in written. Client can management his/her project management tools or perticipate in ours.
-                </p>
-                <ul class="list-none mt-6">
-                  <li class="py-2">
-                    <div class="flex items-center">
-                      <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
-                          ><i class="fas fa-fingerprint"></i
-                        ></span>
-                      </div>
-                      <div>
-                        <h4 class="text-gray-600">
-                         Projetc management with Asana
-                        </h4>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="py-2">
-                    <div class="flex items-center">
-                      <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
-                          ><i class="fab fa-html5"></i
-                        ></span>
-                      </div>
-                      <div>
-                        <h4 class="text-gray-600">Code quality with jslint</h4>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="py-2">
-                    <div class="flex items-center">
-                      <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
-                          ><i class="far fa-paper-plane"></i
-                        ></span>
-                      </div>
-                      <div>
-                        <h4 class="text-gray-600">Github Action for CI/CD</h4>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!--<section class="pt-20 pb-48">
+        </nav>
+        <main>
+            <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+                <div class="absolute top-0 w-full h-full bg-center bg-cover" style='background-image: url("./assets/img/header-banner.jpg");'>
+                    <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+                </div>
+                <div class="container relative mx-auto">
+                    <div class="items-center flex flex-wrap">
+                        <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                            <div class="pr-12">
+                                <h1 class="text-white font-semibold text-5xl">
+                                    <strong>Full Stack</strong> Web Application developer.
+                            </h1>
+                                <p class="mt-4 text-lg text-gray-300">
+                                    <strong>NZAIN</strong> is my brand name. I am Ziauddin Robin <strong>Freelancer</strong> Web application developer. I am working with web technology. Building API for mobile applications.
+                                <strong>E-commerce</strong>,<strong>Business automation software</strong>,<strong>Mobile
+                  application</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden" style="height: 70px; transform: translateZ(0px);">
+                    <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                        <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                    </svg>
+                </div>
+            </div>
+            <section class="pb-20 bg-gray-300 -mt-24">
+                <div class="container mx-auto px-4">
+                    <div class="flex flex-wrap">
+                        <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                                <div class="px-4 py-5 flex-auto">
+                                    <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                                        <i class="fas fa-award"></i>
+                                    </div>
+                                    <h6 class="text-xl font-semibold">Back End development</h6>
+                                    <p class="mt-2 mb-4 text-gray-600">
+                                        <i class="fas fa-database"></i>
+                                        <a class="text-gray-600 hover:text-gray-900" href="https://www.mysql.com/" target="_blank" rel="noopener norefferer">
+                    Mysql</a> and <a href="https://www.postgresql.org/" target="_blank" class="text-gray-600 hover:text-gray-900" rel="norefferer noopener">postgresql</a>.<br/>
+                                        <i class="fas fa-language"></i>
+                                        <a href="https://www.php.net/" target="_blank" class="text-gray-600 hover:text-gray-900" rel="norefferer noopener">PHP</a>, <a href="https://www.python.org/" target="_blank" class="text-gray-600 hover:text-gray-900"
+                                        rel="norefferer noopener">python</a> and <a href="https://golang.org/" target="_blank" class="text-gray-600 hover:text-gray-900" rel="norefferer noopener">Go</a>
+                                        <br/>
+                                        <i class="fab fa-php"></i>
+                                        <a href="https://laravel.com/" target="_blank" class="text-gray-600 hover:text-gray-900" rel="norefferer noopener">laravel</a>, <a href="https://codeigniter.com/" target="_blank" class="text-gray-600 hover:text-gray-900"
+                                        rel="norefferer noopener">codeigniter</a>, <a href="https://cakephp.org/" target="_blank" class="text-gray-600 hover:text-gray-900" rel="norefferer noopener">cakePHP</a><br/>
+                                        <i class="fab fa-php"></i>
+                                        <a href="https://jigsaw.tighten.co/" target="_blank" class="text-gray-600 hover:text-gray-900" rel="norefferer noopener">Jigsaw</a>, <a href="https://wordpress.org/" target="_blank" class="text-gray-600 hover:text-gray-900"
+                                        rel="norefferer noopener">wordpress</a><br/>
+                                        <i class="fab fa-python"></i>
+                                        <a href="https://www.djangoproject.com/" target="_blank" class="text-gray-600 hover:text-gray-900" rel="norefferer noopener">Django</a>, <a href="https://palletsprojects.com/p/flask/" target="_blank"
+                                        class="text-gray-600 hover:text-gray-900" rel="norefferer noopener">flask</a>
+                                        <br/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-4/12 px-4 text-center">
+                            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                                <div class="px-4 py-5 flex-auto">
+                                    <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                                        <i class="fas fa-retweet"></i>
+                                    </div>
+                                    <h6 class="text-xl font-semibold">Front End Development</h6>
+                                    <p class="mt-2 mb-4 text-gray-600">
+                                    A professional UI/UX team working with me. All my clients UI/UX done by them. But now a days there are lot of UI framework like tailwind, material, bootstrap introdused and some of them are really amazing. So I start working with some of them with javascript
+                                    framework react, vue with build tools like webpack, parcel, roam.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+                            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                                <div class="px-4 py-5 flex-auto">
+                                    <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                                        <i class="fas fa-fingerprint"></i>
+                                    </div>
+                                    <h6 class="text-xl font-semibold">Mobile APP API development</h6>
+                                    <p class="mt-2 mb-4 text-gray-600">
+                                        <i class="fas fa-database"></i>
+                                        <a class="text-gray-600 hover:text-gray-900" href="https://www.mysql.com/" target="_blank" rel="noopener norefferer">
+                    Mysql</a>, <a href="https://www.postgresql.org/" target="_blank" class="text-gray-600 hover:text-gray-900" rel="norefferer noopener">postgresql</a>, <a href="https://fauna.com/" target="_blank" class="text-gray-600 hover:text-gray-900"
+                                        rel="norefferer noopener">Fauna</a>.<br/>
+                                        <i class="fab fa-php"></i>
+                                        <a href="https://lumen.laravel.com/" target="_blank" class="text-gray-600 hover:text-gray-900" rel="norefferer noopener">Lumen</a>, <a href="http://docs.guzzlephp.org/en/5.3/" target="_blank"
+                                        class="text-gray-600 hover:text-gray-900" rel="norefferer noopener">guzzle</a>, <a href="http://www.slimframework.com/" target="_blank" class="text-gray-600 hover:text-gray-900" rel="norefferer noopener">slim</a>,
+                                    <a href="https://www.yiiframework.com/" target="_blank" class="text-gray-600 hover:text-gray-900" rel="norefferer noopener">Yii2</a><br/>
+                                        <i class="fab fa-python"></i>
+                                        <a href="https://www.djangoproject.com/" target="_blank" class="text-gray-600 hover:text-gray-900" rel="norefferer noopener">Django</a>, <a href="https://palletsprojects.com/p/flask/" target="_blank"
+                                        class="text-gray-600 hover:text-gray-900" rel="norefferer noopener">flask</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap items-center mt-32">
+                        <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+                            <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+                                <i class="fas fa-user-friends text-xl"></i>
+                            </div>
+                            <h3 class="text-3xl mb-2 font-semibold leading-normal">
+                            Working with current technology and maintain best practice
+                        </h3>
+                            <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                            My working process is client oriented. I can working in different language like <strong>PHP</strong>,
+                            <strong>Python</strong>, <strong>Javascript</strong> or <strong>GO</strong>. If you have any project based on those language then you can hire me.
+                        </p>
+                            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                            You can hire me as full time or part time or contractual basis. But My choice contractual project because in that case get more freedom and most challenging work.
+                        </p>
+                            <a href="https://www.nzian.xyz/hire" class="font-bold text-gray-800 mt-8">Lets discuss</a>
+                        </div>
+                        <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+                            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
+                                <img alt="Lets discuss about next project" src="./assets/img/lets-discuss-next-project.jpg" class="w-full align-middle rounded-t-lg"/>
+                                <blockquote class="relative p-8 mb-4">
+                                    <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
+                                        <polygon points="-30,95 583,95 583,65" class="text-pink-600 fill-current"></polygon>
+                                    </svg>
+                                    <h4 class="text-xl font-bold text-white">
+                                    Lets discuss about next project
+                                </h4>
+                                    <p class="text-md font-light mt-2 text-white">
+                                    You can contact me several way as below.<br/>
+                                        <ul class="text-white">
+                                            <li>
+                                                <i class="fas fa-phone"></i>
+                                                <a class="font-bold" href="tel:+8801841908292">+88018419082</a>
+                                            </li>
+                                            <li>
+                                                <i class="fab fa-whatsapp"></i>
+                                                <a class="font-bold" href="whatsapp://tel:+8801841908292">+88018419082</a>
+                                            </li>
+                                            <li>
+                                                <i class="fab fa-skype"></i>
+                                                <a class="font-bold" href="skype:md.ziauddin47?call">md.ziauddin47</a>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-envelope"></i>
+                                                <a class="font-bold" href="mailto:nzianit@gmail.com">nzianit@gmail.com</a>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="relative py-20">
+                <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0px);">
+                    <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                        <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+                    </svg>
+                </div>
+                <div class="container mx-auto px-4">
+                    <div class="items-center flex flex-wrap">
+                        <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+                            <img alt="Professional Fast Delivery project" class="max-w-full rounded-lg shadow-lg" src="./assets/img/professional-fast-delivery.jpg"/>
+                        </div>
+                        <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                            <div class="md:pr-12">
+                                <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+                                    <i class="fas fa-rocket text-xl"></i>
+                                </div>
+                                <h3 class="text-3xl font-semibold">...Professional Fast Delivery</h3>
+                                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                                All communication should be in written. Client can management his/her project management tools or perticipate in ours.
+                            </p>
+                                <ul class="list-none mt-6">
+                                    <li class="py-2">
+                                        <div class="flex items-center">
+                                            <div>
+                                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                                                    <i
+                          class="fas fa-fingerprint"></i>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">
+                                                Projetc management with Asana
+                                            </h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="py-2">
+                                        <div class="flex items-center">
+                                            <div>
+                                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                                                    <i
+                          class="fab fa-html5"></i>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">Code quality with jslint</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="py-2">
+                                        <div class="flex items-center">
+                                            <div>
+                                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                                                    <i
+                          class="far fa-paper-plane"></i>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">Github Action for CI/CD</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--<section class="pt-20 pb-48">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center text-center mb-24">
             <div class="w-full lg:w-6/12 px-4">
@@ -643,361 +554,481 @@
           </div>
         </div>
       </section>-->
-      <section class="pb-20 relative block bg-gray-900">
-        <div
-          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-          style="height: 80px; transform: translateZ(0px);"
-        >
-          <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              class="text-gray-900 fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
-          </svg>
-        </div>
-        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
-          <div class="flex flex-wrap text-center justify-center">
-            <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl font-semibold text-white">Lets work together</h2>
-              <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-               Communication is the key. Lets discuss about your need and make a plan to implement it. So Building something amazing need both party communication.
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-wrap mt-12 justify-center">
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
-              >
-                <i class="fas fa-medal text-xl"></i>
-              </div>
-              <h6 class="text-xl mt-5 font-semibold text-white">
-                Collaboration
-              </h6>
-              <p class="mt-2 mb-4 text-gray-500">
-                We can use project management tools like <a href="https://asana.com/" class="text-gray-600 hover:text-gray-900" target="_blank" rel="noopener norefferer">Asana</a>, <a href="https://trello.com/en" class="text-gray-600 hover:text-gray-900" target="_blank" rel="norefferer noopener">Trello</a>, <a href="https://www.atlassian.com/software/jira" class="text-gray-600 hover:text-gray-900" target="_blank" rel="noopener norefferer">jira</a>
-              </p>
-            </div>
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
-              >
-                <i class="fas fa-poll text-xl"></i>
-              </div>
-              <h5 class="text-xl mt-5 font-semibold text-white">
-                Technology Stack and development
-              </h5>
-              <p class="mt-2 mb-4 text-gray-500">
-               There are several technology stack. Based on client requirement I choose best suitable stack. on ther hand client can choose his/her stack as well.
-              </p>
-            </div>
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
-              >
-                <i class="fas fa-lightbulb text-xl"></i>
-              </div>
-              <h5 class="text-xl mt-5 font-semibold text-white">Test and delivery</h5>
-              <p class="mt-2 mb-4 text-gray-500">
-                I prefere test driven deveelopment. We can choose some stack which has build in test framework to test and build application.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="relative block py-24 lg:pt-0 bg-gray-900">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-            <div class="w-full lg:w-6/12 px-4">
-              <div
-                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
-              >
-                <div class="flex-auto p-5 lg:p-10">
-                  <h4 class="text-2xl font-semibold">Want to hire me?</h4>
-                  <p class="leading-relaxed mt-1 mb-4 text-gray-600">
-                    Complete this form and I will get back to you in an hour.
-                  </p>
-                  <div class="relative w-full mb-3 mt-8">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="full-name"
-                      >Full Name</label
-                    ><input
-                      name="fullname"
-                      type="text"
-                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Full Name"
-                      style="transition: all 0.15s ease 0s;"
-                    />
-                  </div>
-                  <div class="relative w-full mb-3">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="email"
-                      >Email</label
-                    ><input
-                      type="email"
-                      name="email"
-                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Email"
-                      style="transition: all 0.15s ease 0s;"
-                    />
-                  </div>
-                  <div class="relative w-full mb-3">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="message"
-                      >Message</label
-                    ><textarea
-                      rows="4"
-                      cols="80"
-                      name="message"
-                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Type a message..."
-                    ></textarea>
-                  </div>
-                  <div class="text-center mt-6">
-                    <button name="send-message"
-                      class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                      style="transition: all 0.15s ease 0s;"
-                    >
-                      Send Message
-                    </button>
-                  </div>
+            <section class="pb-20 relative block bg-gray-900">
+                <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0px);">
+                    <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                        <polygon class="text-gray-900 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                    </svg>
                 </div>
-              </div>
+                <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+                    <div class="flex flex-wrap text-center justify-center">
+                        <div class="w-full lg:w-6/12 px-4">
+                            <h2 class="text-4xl font-semibold text-white">Lets work together</h2>
+                            <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+                            Communication is the key. Lets discuss about your need and make a plan to implement it. So Building something amazing need both party communication.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap mt-12 justify-center">
+                        <div class="w-full lg:w-3/12 px-4 text-center">
+                            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                                <i class="fas fa-medal text-xl"></i>
+                            </div>
+                            <h6 class="text-xl mt-5 font-semibold text-white">
+                            Collaboration
+                        </h6>
+                            <p class="mt-2 mb-4 text-gray-500">
+                            We can use project management tools like <a href="https://asana.com/" class="text-gray-600" target="_blank" rel="noopener norefferer">Asana</a>, <a href="https://trello.com/en" class="text-gray-600" target="_blank" rel="norefferer noopener">Trello</a>,
+                            <a href="https://www.atlassian.com/software/jira" class="text-gray-600" target="_blank" rel="noopener norefferer">jira</a>
+                            </p>
+                        </div>
+                        <div class="w-full lg:w-4/12 px-4 text-center">
+                            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                                <i class="fas fa-poll text-xl"></i>
+                            </div>
+                            <h5 class="text-xl mt-5 font-semibold text-white">
+                            Technology Stack and development
+                        </h5>
+                            <p class="mt-2 mb-4 text-gray-500">
+                            There are several technology stack. Based on client requirement I choose best suitable stack. on ther hand client can choose his/her stack as well.
+                        </p>
+                        </div>
+                        <div class="w-full lg:w-3/12 px-4 text-center">
+                            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                                <i class="fas fa-lightbulb text-xl"></i>
+                            </div>
+                            <h5 class="text-xl mt-5 font-semibold text-white">Test and delivery</h5>
+                            <p class="mt-2 mb-4 text-gray-500">
+                            I prefere test driven deveelopment. We can choose some stack which has build in test framework to test and build application.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="relative block py-24 lg:pt-0 bg-gray-900">
+                <div class="container mx-auto px-4">
+                    <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+                        <div class="w-full lg:w-6/12 px-4">
+                            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
+                                <div class="flex-auto p-5 lg:p-10">
+                                    <h4 class="text-2xl font-semibold">Want to hire me?</h4>
+                                    <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                                    Complete this form and I will get back to you in an hour.
+                                </p>
+                                    <form name="hire-me" id="hire-me">
+                                        <div class="invisible success-message"></div>
+                                        <div class="relative w-full mb-3 mt-8">
+
+                                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">Full
+                      Name*</label><input name="fullname" minlenght="3" type="text" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                            placeholder="Full Name" style="transition: all 0.15s ease 0s;"/>
+                                            <div class="invisible message"></div>
+                                        </div>
+                                        <div class="relative w-full mb-3">
+                                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Email*</label><input type="email" name="email" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                            placeholder="Email" style="transition: all 0.15s ease 0s;"/>
+                                            <div class="invisible message"></div>
+                                        </div>
+                                        <div class="relative w-full mb-3">
+                                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">Message*</label>
+                                            <textarea rows="4" cols="80" name="message" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                            placeholder="Type a message..."></textarea>
+                                            <div class="invisible message"></div>
+                                        </div>
+                                        <div class="text-center mt-6">
+                                            <button name="send-message" class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1" type="submit" style="transition: all 0.15s ease 0s;">
+                                        Send Message
+                                        </button>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="relative bg-gray-300 pt-8 pb-6">
+            <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+      style="height: 80px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
             </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="relative bg-gray-300 pt-8 pb-6">
-      <div
-        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-        style="height: 80px; transform: translateZ(0px);"
-      >
-        <svg
-          class="absolute bottom-0 overflow-hidden"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          version="1.1"
-          viewBox="0 0 2560 100"
-          x="0"
-          y="0"
-        >
-          <polygon
-            class="text-gray-300 fill-current"
-            points="2560 0 2560 100 0 100"
-          ></polygon>
-        </svg>
-      </div>
-      <div class="container mx-auto px-4">
-        <div class="flex flex-wrap">
-          <div class="w-full lg:w-6/12 px-4">
-            <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
-            <h5 class="text-lg mt-0 mb-2 text-gray-700">
-              Find me on any of these platforms, I respond as soon as possible.
-            </h5>
-            <div class="mt-6">
-              <button
-                class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-                data-url ="https://twitter.com/Ziauddin47"
-              >
-                <i class="flex fab fa-twitter"></i></button
-              ><button
-                class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button" 
-                data-url="https://www.facebook.com/devnzian"
-              >
-                <i class="flex fab fa-facebook-square"></i></button
-              ><button
-                class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button" 
-                data-url="https://www.instagram.com/devnzian/"
-              >
-                <i class="flex fab fa-instagram"></i></button
-              ><button
-                class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button" data-url="https://github.com/ziauddin"
-              >
-                <i class="flex fab fa-github"></i>
-              </button>
-            </div>
-          </div>
-          <div class="w-full lg:w-6/12 px-4">
-            <div class="flex flex-wrap items-top mb-6">
-              <div class="w-full lg:w-4/12 px-4 ml-auto">
-                <span
-                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
-                  >Useful Links</span
-                >
-                <ul class="list-unstyled">
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.nzian.xyz/about-me"
-                      >About Me</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.nzian.xyz/blog"
-                      >Blog</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://github.com/ziauddin"
-                      >Github</a
-                    >
-                  </li>
-                  <!--<li>
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap">
+                    <div class="w-full lg:w-6/12 px-4">
+                        <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+                        <h5 class="text-lg mt-0 mb-2 text-gray-700">
+            Find me on any of these platforms, I respond as soon as possible.
+          </h5>
+                        <div class="mt-6">
+                            <button
+              class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button" name="twitter-footer" data-url="https://twitter.com/Ziauddin47">
+                                <i class="flex fab fa-twitter"></i>
+                            </button>
+                            <button class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                                            type="button" name="fb-footer" data-url="https://www.facebook.com/devnzian">
+                                <i class="flex fab fa-facebook-square"></i>
+                            </button>
+                            <button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button" name="insta-footer"
+                                            data-url="https://www.instagram.com/devnzian/">
+                                <i class="flex fab fa-instagram"></i>
+                            </button>
+                            <button class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button" name="github-footer"
+                                            data-url="https://github.com/ziauddin">
+                                <i class="flex fab fa-github"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-6/12 px-4">
+                        <div class="flex flex-wrap items-top mb-6">
+                            <div class="w-full lg:w-4/12 px-4 ml-auto">
+                                <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.nzian.xyz/about">About Me</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.nzian.xyz/blog">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://github.com/ziauddin" target="_blank" rel="noopener norefferer">Github</a>
+                                    </li>
+                                    <!--<li>
                     <a
                       class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                       href="https://www.creative-tim.com/bootstrap-themes/free"
                       >Free Products</a
                     >
                   </li>-->
-                </ul>
-              </div>
-              <div class="w-full lg:w-4/12 px-4">
-                <span
-                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
-                  >Other Resources</span
-                >
-                <ul class="list-unstyled">
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.linkedin.com/in/zia-uddin-177437b/"
-                      >Linkedin</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://nzian.xyz/terms"
-                      >Terms &amp; Conditions</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://nzian.xyz/privacy"
-                      >Privacy Policy</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://nzian.xyz/contact-us"
-                      >Contact Us</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="my-6 border-gray-400" />
-        <div
-          class="flex flex-wrap items-center md:justify-between justify-center"
-        >
-          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div class="text-sm text-gray-600 font-semibold py-1">
-              Copyright ©2020 <a
-              href="https://www.nzian.xyz" 
-              class="text-gray-600 hover:text-gray-900"
-              >NZIAN</a> build with <a 
-              href="https://github.com/creativetimofficial/tailwind-starter-kit"
-              class="text-gray-600 hover:text-gray-900" 
-              >Tailwind Starter Kit
+                                </ul>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4">
+                                <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other Resources</span>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.linkedin.com/in/zia-uddin-177437b/" rel="noopener norefferer" target="_blank">Linkedin</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://nzian.xyz/terms">Terms &amp; Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://nzian.xyz/privacy">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://nzian.xyz/contact-us">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-6 border-gray-400"/>
+                <div class="flex flex-wrap items-center md:justify-between justify-center">
+                    <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                        <div class="text-sm text-gray-600 font-semibold py-1">
+                                    Copyright ©2020 <a href="https://www.nzian.xyz" class="text-gray-600 hover:text-gray-900">NZIAN</a> build with <a href="https://github.com/creativetimofficial/tailwind-starter-kit" class="text-gray-600 hover:text-gray-900"  rel="noopener norefferer" target="_blank">Tailwind Starter Kit
             </a>.
+                                </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </footer>
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({xfbml: true, version: 'v8.0'});
+            };
+
+            (function (d, s, id) {
+                var js,
+                    fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) 
+                    return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs
+                    .parentNode
+                    .insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <div class="fb-customerchat" attribution=setup_tool page_id="111062414076850" theme_color="#d4a88c" logged_in_greeting="Welcome to nzianxyz world. Lets discuss about something amazing" logged_out_greeting="Welcome to nzianxyz world. Lets discuss about something amazing"></div>
+    </body>
+    <script async defer src="./assets/js/validate.js"></script>
+    <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script>
+        // header mobile nav toggle.
+        function toggleNavbar(collapseID) {
+            document
+                .getElementById(collapseID)
+                .classList
+                .toggle("hidden");
+            document
+                .getElementById(collapseID)
+                .classList
+                .toggle("block");
+        }
+
+        // add event function for url load in a new tab and phone number in a new tab
+
+        function buttonEvent(element) {
+            if (element && "url" in element.dataset) {
+                element.addEventListener('click', function () {
+                    window.open(element.dataset.url, '_blank');
+                });
+            } else if (element && "phone" in element.dataset) {
+                element.addEventListener('click', function () {
+                    window.open("tel:" + element.dataset.phone, '_blank');
+                })
+            }
+        }
+
+        /**
+     * postData function
+     * @param url, data
+     * @response JSON
+     */
+
+        async function postData(url = '', data = {}) {
+            if (url !== '' && data !== {}) {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    mode: 'cors',
+                    cache: 'no-cache',
+                    credentials: 'same-origin',
+                    headers: {
+                        'Content-type': 'application/json'
+                    },
+                    redirect: 'follow',
+                    referrerPolicy: 'no-referrer',
+                    body: JSON.stringify(data)
+                });
+                return response.json();
+            } else {
+                return {'error': 1, 'message': "Empty data. Please provided all required filed data"};
+            }
+
+        }
+
+        // have some button which has url and need to open those url in a new tab on click event.
+
+        //first get the element which is clicked
+        const urlButtons = document.querySelectorAll('button[data-url]');
+        const phoneButton = document.querySelector('button[data-phone]');
+        //const sendButton = document.querySelector('button[name=send-message]');
+        //console.log(sendButton);
+        //console.log(phoneButton);
+        // set an click eventlistner to load the url a new tab for urlButton
+        try {
+            urlButtons.forEach(buttonEvent);
+            buttonEvent(phoneButton);
+        } catch (err) {
+            console.log(err);
+        }
+
+        (function () {
+
+            // These are the constraints used to validate the form
+            var constraints = {
+                fullname: {
+                    // Name is also required
+                    presence: true,
+                    // And must be at least 5 characters long
+                    length: {
+                        minimum: 3
+                    }
+                },
+                email: {
+                    // Email is required
+                    presence: true,
+                    // and must be an email (duh)
+                    email: true
+                },
+
+                "message": {
+                    presence: true,
+                    // Number of children has to be an integer >= 0
+                    length: {
+                        minimum: 5
+                    }
+                }
+            };
+
+            // Hook up the form so we can prevent it from being posted
+            var form = document.querySelector("form#hire-me");
+            form.addEventListener("submit", function (ev) {
+                ev.preventDefault();
+                handleFormSubmit(form);
+            });
+
+            // Hook up the inputs to validate on the fly
+            var inputs = document.querySelectorAll("input, textarea")
+            for (var i = 0; i < inputs.length; ++i) {
+                inputs
+                    .item(i)
+                    .addEventListener("change", function (ev) {
+                        var errors = validate(form, constraints) || {};
+                        showErrorsForInput(this, errors[this.name])
+                    });
+            }
+
+            function handleFormSubmit(form, input) {
+                // validate the form against the constraints
+                var errors = validate(form, constraints);
+                // then we update the form to reflect the results
+                showErrors(form, errors || {});
+                if (!errors) {
+                    showSuccess();
+                }
+            }
+
+            // Updates the inputs with the validation errors
+            function showErrors(form, errors) {
+                // We loop through all the inputs and show the errors for that input
+                _.each(form.querySelectorAll("input[name], textarea[name]"), function (input) {
+                    // Since the errors can be null if no errors were found we need to handle
+                    // that
+                    showErrorsForInput(input, errors && errors[input.name]);
+                });
+            }
+
+            // Shows the errors for a specific input
+            function showErrorsForInput(input, errors) {
+                // This is the root of the input
+                var formGroup = closestParent(input.parentNode, "relative"),
+                    // Find where the error messages will be insert into
+
+                    messages = formGroup.querySelector(".message");
+                // First we remove any old messages and resets the classes
+                resetFormGroup(formGroup, input);
+                // If we have errors
+                if (errors) {
+                    // we first mark the group has having errors
+                    //formGroup.classList.add("error");
+                    input
+                        .classList
+                        .add('has-error');
+                    // then we append all the errors
+                    _.each(errors, function (error) {
+                        addError(messages, error);
+                    });
+                } else {
+                    // otherwise we simply mark it as success
+                    // formGroup.classList.add("success");
+                    input
+                        .classList
+                        .add('has-success');
+                }
+            }
+
+            // Recusively finds the closest parent that has the specified class
+            function closestParent(child, className) {
+                if (!child || child == document) {
+                    return null;
+                }
+                if (child.classList.contains(className)) {
+                    return child;
+                } else {
+                    return closestParent(child.parentNode, className);
+                }
+            }
+
+            function resetFormGroup(formGroup, input) {
+                // Remove the success and error classes
+                input
+                    .classList
+                    .remove("has-error");
+                input
+                    .classList
+                    .remove("has-success");
+                // and remove any old messages
+                _.each(formGroup.querySelectorAll(".help-block"), function (el) {
+                    el
+                        .parentNode
+                        .removeChild(el);
+                });
+            }
+
+            // Adds the specified error with the following markup
+            // <p class="help-block error">[message]</p>
+            /*
+        <div class="flex items-center bg-red-500 text-red text-sm font-bold px-4 py-3" role="alert">
+            <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z"/></svg>
+             <p>Something happened that you should know about.</p>
         </div>
-      </div>
-    </footer>
-  </body>
-  <script>
-    // header mobile nav toggle.
-    function toggleNavbar(collapseID) {
-      document.getElementById(collapseID).classList.toggle("hidden");
-      document.getElementById(collapseID).classList.toggle("block");
-    }
+        */
+            function addError(messages, error) {
+                var block = document.createElement("div");
+                var message = "<p>" + error + "</p>";
+                var svgIcon = '<svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z"/></svg>';
+                block
+                    .classList
+                    .add("flex", "items-center", "bg-red-100", "text-red", "text-sm", "font-bold", "px-4", "py-3", "help-block");
+                block.setAttribute('role', 'alert');
+                block.innerHTML = svgIcon + message;
+                messages.appendChild(block);
+            }
 
-    // add event function for url load in a new tab and phone number in a new tab
+            function showSuccessMessage(element, message) {
+                var block = document.createElement("div");
+                var message = "<p>" + message + "</p>";
+                var svgIcon = '<svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z"/></svg>';
+                block
+                    .classList
+                    .add("flex", "items-center", "bg-green-100", "text-green", "text-sm", "font-bold", "px-4", "py-3", "help-block");
+                block.setAttribute('role', 'alert');
+                block.innerHTML = svgIcon + message;
+                element.appendChild(block);
+                fade(element);
+            }
 
-    function buttonEvent(element)  {
-      if(element && "url" in element.dataset) {
-          element.addEventListener('click', function()  {
-            window.open(element.dataset.url, '_blank');
-          });
-      }
-      else if(element && "phone" in element.dataset) {
-          element.addEventListener('click', function()  {
-            window.open("tel:" + element.dataset.phone, '_blank');
-          })
-      }
-    }
+            function fade(s) {
+                s.style.opacity = 1;
+                (s.opacity -= .1) < 0
+                    ? s.display = "none"
+                    : setTimeout(fade, 500)
+            }
 
-    /**
-    * postData function
-    * @param url, data
-    * @response JSON
-    */
+            function showSuccess() {
+                // first select all element that has some event or operations.
+                const name = document
+                    .querySelector('input[name=fullname]')
+                    .value;
+                const email = document
+                    .querySelector('input[name=email]')
+                    .value;
+                const message = document
+                    .querySelector('textarea[name=message]')
+                    .value;
+                const hireForm = document.querySelector('form#hire-me');
+                const successDiv = document.querySelector('.success-message');
 
-    async function postData(url = '', data = {})  {
-      const response = await fetch(url, {
-          method: 'POST',
-          mode: 'cors',
-          cache: 'no-cache',
-          credentials: 'same-origin',
-          headers: {
-            'Content-type': 'application/json'
-          },
-          redirect: 'follow',
-          referrerPolicy: 'no-referrer',
-          body: JOSN.stringify(data)
-      });
-      return response.json();
-    }
+                postData('https://nzian.xyz/lib/email.php', {
+                    name: name,
+                    email: email,
+                    message: message
+                }).then(data => {
+                    if (typeof data === 'Object') {
+                        data = JSON.parse(data);
+                        if (data.status === '1') {
+                            hireForm.reset();
+                            var inputs = document.querySelectorAll("input, textarea");
+                            for (var i = 0; i < inputs.length; ++i) {
+                                var formGroup = closestParent(inputs(i).parentNode, "relative");
+                                resetFormGroup(formGroup, inputs.item(i));
+                            }
+                            showSuccessMessage(successDiv, "Thank you for your message.Your message sent successfully.")
+                        }
 
-    // have some button which has url and need to open those url in a new tab on click event.
+                    }
+                });
+            }
+        })();
+    </script>
 
-    //first get the element which is clicked
-    const urlButtons = document.querySelectorAll('button[data-url]');
-    const phoneButton = document.querySelector('button[data-phone]');
-    const sendButton = document.querySelector('button[name=send-message]');
-    //console.log(sendButton);
-    //console.log(phoneButton);
-    // set an click eventlistner to load the url a new tab for urlButton
-    try {
-        urlButtons.forEach(buttonEvent);
-        buttonEvent(phoneButton);
-        sendButton.addEventListener('click', function(){
-            const name = document.querySelector('input[name=fullname]').value;
-            const email = document.querySelector('input[name=email]').value;
-            const message = document.querySelector('textarea[name=message]').value;
-           postData('https://nzian.xyz/email.php', {name: name, email: email, message: message}).then(data => {
-              console.log(data);
-           }); 
-        });
-    } catch(err)  {
-        console.log(err);
-    }
-    
-  </script>
 </html>
