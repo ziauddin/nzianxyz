@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="US-en">
+<html lang="en-US">
 
   <head>
     <meta charset="utf-8"/>
@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#e2e8f0"/>
     <link rel="shortcut icon" href="./assets/img/favicon.ico"/>
     <meta content="Full stack web application developer in dhaka bangladesh" property="og:title"/>
-    <meta content="Ziauddin Robin full stack web application developer from dhaka bangladesh. Working with PHP python GO Javascript programming language. Develop web based application and software.#vue #react #javascript #laravel #slim #mysql #postgres #flask" property="description"
+    <meta name="description" content="Ziauddin Robin full stack web application developer from dhaka bangladesh. Working with PHP python GO Javascript programming language. Develop web based application and software.#vue #react #javascript #laravel #slim #mysql #postgres #flask" 
 />
     <meta content="Ziauddin Robin full stack web application developer from dhaka bangladesh. Working with PHP python GO Javascript programming language. Develop web based application and software.#vue #react #javascript #laravel #slim #mysql #postgres #flask" property="og:description"
 />
@@ -225,7 +225,7 @@ src="https://www.facebook.com/tr?id=657539618206817&ev=PageView&noscript=1"
                   <div class="relative flex flex-col min-w-0 break-words w-full mb-6 pt-2 shadow-lg rounded-lg bg-gray-300">
                     <div class="flex-auto p-5 lg:p-10">
                       <h4 class="text-2xl font-semibold">Want to hire me?</h4>
-                      <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                      <p class="leading-relaxed mt-1 mb-4 text-gray-700">
                                     Complete this form and I will get back to you in an hour.
                                 </p>
                       <form name="hire-me" id="hire-me">
@@ -305,7 +305,7 @@ src="https://www.facebook.com/tr?id=657539618206817&ev=PageView&noscript=1"
         <div class="w-full lg:w-6/12 px-4">
           <div class="flex flex-wrap items-top mb-6">
             <div class="w-full lg:w-4/12 px-4 ml-auto">
-              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
+              <span class="block uppercase text-gray-700 text-sm font-semibold mb-2">Useful Links</span>
               <ul class="list-unstyled">
                 <li>
                   <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.nzian.xyz/about">About Me</a>
@@ -326,7 +326,7 @@ src="https://www.facebook.com/tr?id=657539618206817&ev=PageView&noscript=1"
               </ul>
             </div>
             <div class="w-full lg:w-4/12 px-4">
-              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other Resources</span>
+              <span class="block uppercase text-gray-700 text-sm font-semibold mb-2">Other Resources</span>
               <ul class="list-unstyled">
                 <li>
                   <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.linkedin.com/in/zia-uddin-177437b/" rel="noopener norefferer" target="_blank">Linkedin</a>
@@ -349,7 +349,7 @@ src="https://www.facebook.com/tr?id=657539618206817&ev=PageView&noscript=1"
       <div class="flex flex-wrap items-center md:justify-between justify-center">
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
           <div class="text-sm text-gray-600 font-semibold py-1">
-                                    Copyright ©2020 <a href="https://www.nzian.xyz" class="text-gray-600 hover:text-gray-900">NZIAN</a> build with <a href="https://github.com/creativetimofficial/tailwind-starter-kit" class="text-gray-600 hover:text-gray-900"  rel="noopener norefferer" target="_blank">Tailwind Starter Kit
+                                    Copyright ©2020 <a href="https://www.nzian.xyz" class="text-gray-700 hover:text-gray-900">NZIAN</a> build with <a href="https://github.com/creativetimofficial/tailwind-starter-kit" class="text-gray-700 hover:text-gray-900"  rel="noopener norefferer" target="_blank">Tailwind Starter Kit
             </a>.
                                 </div>
         </div>
@@ -633,14 +633,17 @@ src="https://www.facebook.com/tr?id=657539618206817&ev=PageView&noscript=1"
       }).then(data => {
         if (typeof data === 'Object') {
           data = JSON.parse(data);
-          if (data.status === '1') {
+          if(data.status === '1') {
             hireForm.reset();
             var inputs = document.querySelectorAll("input, textarea");
             for (var i = 0; i < inputs.length; ++i) {
               var formGroup = closestParent(inputs(i).parentNode, "relative");
               resetFormGroup(formGroup, inputs.item(i));
             }
-            showSuccessMessage(successDiv, "Thank you for your message.Your message sent successfully.")
+            showSuccessMessage(successDiv,data.message)
+          }
+          else {
+            showErrors(successDiv, data.message);
           }
 
         }

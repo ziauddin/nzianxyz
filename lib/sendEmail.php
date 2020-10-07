@@ -22,8 +22,8 @@ try {
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'noreply@nzian.xyz';                     // SMTP username
     $mail->Password   = 'nzian@nr@47';                               // SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    $mail->SMTPSecure = false;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+    $mail->Port       = 26;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
     $mail->setFrom('noreply@nzian.xyz', 'NzianXYZ');
@@ -43,8 +43,8 @@ try {
     $mail->AltBody = $message;
 
     $mail->send();
-    return array('status'=> 1, "Message sent successfully");
+    return array('status'=> 1, 'message' => "Thank you for your message.Your message sent successfully.");
     } catch (Exception $e) {
-        return array('status' => 0, "Message could not be sent. Mailer Error: {$mail->ErrorInfo}");
+        return array('status' => 0, 'message' => "Message could not be sent. Mailer Error: {$mail->ErrorInfo}");
     }
 }
