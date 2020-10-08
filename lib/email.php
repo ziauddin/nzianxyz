@@ -12,7 +12,7 @@ $json = file_get_contents('php://input');
 $data = json_decode($json);
 
 //print_r($data);
-
+//die();
 // validate the data and send it to administrator into a email
 
  $val = new Validation();
