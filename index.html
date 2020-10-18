@@ -908,7 +908,13 @@ src="https://www.facebook.com/tr?id=657539618206817&ev=PageView&noscript=1"
                         showSuccessMessage(successDiv,data.message);
                     }
                      else {
-                        showErrors(successDiv, data.message);
+                         hireForm.reset();
+                         var inputs = document.querySelectorAll("input, textarea");
+                         for (var i = 0; i < inputs.length; ++i) {
+                            var formGroup = closestParent(inputs[i].parentNode, "relative");
+                            resetFormGroup(formGroup,  inputs.item(i));
+                         }
+                        addError(successDiv, data.message);
                     }
                     
 
