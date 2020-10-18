@@ -153,10 +153,10 @@
      RewriteEngine On
 
 #     # (1)
-#     RewriteCond %{HTTPS} =on
-#     RewriteRule ^ - [E=PROTO:https]
-#     RewriteCond %{HTTPS} !=on
-#     RewriteRule ^ - [E=PROTO:http]
+     RewriteCond %{HTTPS} =on
+     RewriteRule ^ - [E=PROTO:https]
+     RewriteCond %{HTTPS} !=on
+     RewriteRule ^ - [E=PROTO:http]
 
 #     # (2)
 #     # RewriteCond %{HTTPS} !=on
