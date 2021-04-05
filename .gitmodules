@@ -1,4 +1,0 @@
-[submodule "lib/validation/Validation"]
-	path = lib/validation/Validation
-	url = https://github.com/ziauddin/Validation
-	branch = dev
