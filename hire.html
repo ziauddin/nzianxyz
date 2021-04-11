@@ -480,7 +480,7 @@ href="https://www.creative-tim.com/bootstrap-themes/free"
     });
 
     // Hook up the inputs to validate on the fly
-    var inputs = document.querySelectorAll("input, textarea")
+    var inputs = document.querySelectorAll("#hire-me input, #hire-me textarea")
     for (var i = 0; i < inputs.length; ++i) {
       inputs
         .item(i)
@@ -623,16 +623,16 @@ href="https://www.creative-tim.com/bootstrap-themes/free"
           
           if(data.status === 1) {
             hireForm.reset();
-            var inputs = document.querySelectorAll("input, textarea");
+            var inputs = document.querySelectorAll("#hire-me input, #hire-me textarea");
             for (var i = 0; i < inputs.length; ++i) {
               var formGroup = closestParent(inputs[i].parentNode, "relative");
               resetFormGroup(formGroup, inputs.item(i));
             }
             showSuccessMessage(successDiv,data.message)
           }
-           else {
+          else {
                 hireForm.reset();
-                var inputs = document.querySelectorAll("input, textarea");
+                var inputs = document.querySelectorAll("#hire-me input, #hire-me textarea");
                 for (var i = 0; i < inputs.length; ++i) {
                   var formGroup = closestParent(inputs[i].parentNode, "relative");
                   resetFormGroup(formGroup,  inputs.item(i));

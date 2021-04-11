@@ -802,7 +802,7 @@ src="https://www.facebook.com/tr?id=657539618206817&ev=PageView&noscript=1"
         });
 
         // Hook up the inputs to validate on the fly
-        var inputs = document.querySelectorAll("input, textarea")
+        var inputs = document.querySelectorAll("#hire-me input, #hire-me textarea")
         for (var i = 0; i < inputs.length; ++i) {
             inputs.item(i).addEventListener("change", function(ev) {
                 var errors = validate(form, constraints) || {};
@@ -917,7 +917,6 @@ src="https://www.facebook.com/tr?id=657539618206817&ev=PageView&noscript=1"
             const message = document.querySelector('textarea[name=message]').value;
             const hireForm = document.querySelector('form#hire-me');
             const successDiv = document.querySelector('.success-message');
-           
             postData('https://www.nzian.xyz/lib/email.php', {
                 name: name,
                 email: email,
@@ -929,7 +928,7 @@ src="https://www.facebook.com/tr?id=657539618206817&ev=PageView&noscript=1"
                     //console.dir(data);
                     if(data.status === 1)  {
                         hireForm.reset();
-                         var inputs = document.querySelectorAll("input, textarea");
+                         var inputs = document.querySelectorAll("#hire-me input, #hire-me textarea");
                          for (var i = 0; i < inputs.length; ++i) {
                             var formGroup = closestParent(inputs[i].parentNode, "relative");
                             resetFormGroup(formGroup,  inputs.item(i));
@@ -938,7 +937,7 @@ src="https://www.facebook.com/tr?id=657539618206817&ev=PageView&noscript=1"
                     }
                      else {
                          hireForm.reset();
-                         var inputs = document.querySelectorAll("input, textarea");
+                         var inputs = document.querySelectorAll("i#hire-me input, #hire-me textarea");
                          for (var i = 0; i < inputs.length; ++i) {
                             var formGroup = closestParent(inputs[i].parentNode, "relative");
                             resetFormGroup(formGroup,  inputs.item(i));
@@ -949,8 +948,8 @@ src="https://www.facebook.com/tr?id=657539618206817&ev=PageView&noscript=1"
 
                 }
             })
-            .catch((error) => {
-                console.error('Error:', error);
+            .catch((problem) => {
+                console.error('Error:', problem);
             });
         }
     })();
