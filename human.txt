@@ -1,0 +1,17 @@
+/* TEAM */
+	Chef:Ziauddin Robin
+	Contact: info [at] nzian.xyz
+	Twitter: @devnzian
+	From: Banasree, Dhaka, Bangladesh
+
+/* THANKS */
+
+	(First) Nawaz Sharif
+	Twitter: @nawaz
+	From: Borga, Bangladesh
+
+/* SITE */
+	Last update:2021/04/13
+	Language:  English
+	Doctype:HTML5
+	IDE: Sublime Text, Notepad++
