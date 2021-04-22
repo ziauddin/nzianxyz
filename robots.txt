@@ -4,4 +4,3 @@
 User-agent: *
 Sitemap: https://www.nzian.xyz/sitemap.xml
 Disallow: /lib/
-Disallow: /assets/
