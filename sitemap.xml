@@ -1,7 +1,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-<loc>https://www.nzian.xyz/</loc>
+<loc>https://www.nzian.xyz</loc>
 <lastmod>2021-04-07T20:00:07+00:00</lastmod>
 </url>
 <url>
@@ -17,8 +17,8 @@
 <lastmod>2021-04-07T20:00:07+00:00</lastmod>
 </url>
 <url>
-<loc>https://www.nzian.xyz/about</loc>
-<lastmod>2021-04-07T20:00:07+00:00</lastmod>
+<loc>https://www.nzian.xyz/my-team</loc>
+<lastmod>2021-04-30T20:00:07+00:00</lastmod>
 </url>
 <url>
 <loc>https://www.nzian.xyz/open-source</loc>
