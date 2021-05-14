@@ -78,7 +78,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178492675-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
+window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
@@ -100,6 +100,7 @@ fbq('track', 'PageView');
     y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 })(window, document, "clarity", "script", "6au476prh5");
 window.$crisp=[];window.CRISP_WEBSITE_ID="a05986f5-d8d2-438c-ba0a-d91728e4a6b6";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+
 </script>
 </head>
 
@@ -341,6 +342,32 @@ window.$crisp=[];window.CRISP_WEBSITE_ID="a05986f5-d8d2-438c-ba0a-d91728e4a6b6";
                     </footer>
                     <script async defer src="./assets/js/validate.min.js"></script>
 <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script type="module">
+  import {getCLS, getFID, getLCP} from 'https://unpkg.com/web-vitals?module';
+
+  function sendToGoogleAnalytics({name, delta, id}) {
+    // Assumes the global `gtag()` function exists, see:
+    // https://developers.google.com/analytics/devguides/collection/gtagjs
+    gtag('event', name, {
+      event_category: 'Web Vitals',
+      // Google Analytics metrics must be integers, so the value is rounded.
+      // For CLS the value is first multiplied by 1000 for greater precision
+      // (note: increase the multiplier for greater precision if needed).
+      value: Math.round(name === 'CLS' ? delta * 1000 : delta),
+      // The `id` value will be unique to the current page load. When sending
+      // multiple values from the same page (e.g. for CLS), Google Analytics can
+      // compute a total by grouping on this ID (note: requires `eventLabel` to
+      // be a dimension in your report).
+      event_label: id,
+      // Use a non-interaction event to avoid affecting bounce rate.
+      non_interaction: true,
+    });
+  }
+
+  getCLS(sendToGoogleAnalytics);
+  getFID(sendToGoogleAnalytics);
+  getLCP(sendToGoogleAnalytics);
+</script>
 <script>
     // header mobile nav toggle.
     function toggleNavbar(collapseID) {
