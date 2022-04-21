@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#e2e8f0"/>
+    <link rel="shortcut icon" href="/../../assets/img/favicon.ico"/>
+    <title>Small Office HRM</title>
+    <meta content="Small Office HRM" property="og:title"/>
+    <meta name="description" content="Small or medium office can manage their hrm with this system. You can manage emplyee, employee hiring process, team, attendance, leave, salary, salery calculation, salary slip, office asset, deciplinery, organization chart, role, permissions. But still there are lot of others things related HRM is not listed here. But those can be added as you demand. So feel free to contact us and discuss further."/>
+    <meta name="keywords" content="small office, HRM, Employee management, leave, attendance, php, laravel, mysql, adminlte hrm template, bootstrap theme hrm admin">
+    <meta content="Small or medium office can manage their hrm with this system. You can manage emplyee, employee hiring process, team, attendance, leave, salary, salery calculation, salary slip, office asset, deciplinery, organization chart, role, permissions. But still there are lot of others things related HRM is not listed here. But those can be added as you demand. So feel free to contact us and discuss further." property="og:description"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nzian.xyz">
+    <meta name="twitter:creator" content="@devnzian">
+    <meta name="twitter:title" content="Small Office HRM">
+    <meta name="twitter:description" content="Small or medium office can manage their hrm with this system. You can manage emplyee, employee hiring process, team, attendance, leave, salary, salery calculation, salary slip, office asset, deciplinery, organization chart, role, permissions. But still there are lot of others things related HRM is not listed here. But those can be added as you demand. So feel free to contact us and discuss further.">
+    <meta content="website" property="og:type"/>
+    <meta content="Ziauddin Robin" name="author"/>
+    <meta content="info@nzian.xyz" name="og:email"/>
+    <meta content="Small Office HRM" property="og:site_name"/>
+    <meta content="BD_DHK" property="geo:region"/>
+    <meta content="Banasree" property="geo:placename"/>
+    <meta content="23.7621318, 90.4240397" property="geo:position"/>
+    <meta name="twitter:image" content="/../../assets/img/nzian-twitter-card.png">
+    <meta content="/../../assets/img/nzian-twitter-card.png" property="og:image">
+    <link rel="preload" href="/../../assets/vendor/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+    <link rel="preload" href="/../../assets/vendor/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+    <link rel="preload" href="/../../assets/vendor/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+    <link href="https://www.nzian.xyz/projects/ongoing/local-ecommerce" rel="canonical"/>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+    <link rel="dns-prefetch" href="https://www.facebook.com">
+    <link rel="dns-prefetch" href="https://connect.facebook.net">
+    <link rel="dns-prefetch" href="https://client.crisp.chat">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <script type='application/ld+json'>
+      {
+        "@context": "http://www.schema.org",
+        "@type": "Website",
+        "name": "Small Office HRM",
+        "url": "https://www.nzian.xyz/projects/ongoing/small-office-hrm",
+        "image": "https://www.nzian.xyz/assets/img/nzian-twitter-card.png",
+        "description": "Small or medium office can manage their hrm with this system. You can manage emplyee, employee hiring process, team, attendance, leave, salary, salery calculation, salary slip, office asset, deciplinery, organization chart, role, permissions. But still there are lot of others things related HRM is not listed here. But those can be added as you demand. So feel free to contactus and discuss further.",
+        "author": {
+          "@type": "Person",
+          "name": "Ziauddin Robin",
+          "url": "https://www.nzian.xyz/about"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Ziauddin Robin",
+          "url": "https://www.nzian.xyz"
+        }
+      }
+    </script>
+    <style>
+      .has-error {
+        border: solid red;
+      }
+
+      .has-success {
+        border: solid green;
+      }
+
+      .top-banner {
+        background-image: url("/../../assets/img/projects.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+    <link rel="apple-touch-icon" sizes="76x76" href="/../../assets/img/apple-icon.png"/>
+    <link rel="stylesheet" href="/../../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"/>
+    <link rel="stylesheet" href="/../../assets/css/tailwind.min.css"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-178492675-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-178492675-1');
+
+      !function (f, b, e, v, n, t, s) {
+        if (f.fbq) 
+          return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n
+              .callMethod
+              .apply(n, arguments)
+            : n
+              .queue
+              .push(arguments)
+        };
+        if (!f._fbq) 
+          f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s
+          .parentNode
+          .insertBefore(t, s)
+      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '657539618206817');
+      fbq('track', 'PageView');
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () {
+          (c[a].q = c[a].q || []).push(arguments)
+        };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+        y = l.getElementsByTagName(r)[0];
+        y
+          .parentNode
+          .insertBefore(t, y);
+      })(window, document, "clarity", "script", "6au476prh5");
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = "a05986f5-d8d2-438c-ba0a-d91728e4a6b6";
+      (function () {
+        d = document;
+        s = d.createElement("script");
+        s.src = "https://client.crisp.chat/l.js";
+        s.async = 1;
+        d
+          .getElementsByTagName("head")[0]
+          .appendChild(s);
+      })();
+    </script>
+  </head>
+
+  <body class="text-gray-800 antialiased">
+    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+          <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" title="NZIAN Home page" href="https://www.nzian.xyz">NZIAN</a>
+          <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" name="toggle-nav" onclick="toggleNavbar('example-collapse-navbar')">
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-collapse-navbar">
+          <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" title="About me" href="https://www.nzian.xyz/about">
+                <i class="lg:text-gray-300 text-gray-500 fas fa-user text-lg leading-lg mr-2"></i>
+                About</a>
+            </li>
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" title="Working with me" href="https://www.nzian.xyz/my-team">
+                <i class="lg:text-gray-300 text-gray-500 fas fa-user-friends text-lg leading-lg mr-2"></i>
+                My team</a>
+            </li>
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" title="Projects I involved" href="https://www.nzian.xyz/projects">
+                <i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
+                Projects</a>
+            </li>
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" title="Open source I follow" href="https://www.nzian.xyz/open-source">
+                <i class="lg:text-gray-300 text-gray-500 fab fa-ubuntu text-lg leading-lg mr-2"></i>
+                Open Source</a>
+            </li>
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" title="Hire me" href="https://www.nzian.xyz/hire">
+                <i class="lg:text-gray-300 text-gray-500 fas fa-folder-plus text-lg leading-lg mr-2"></i>
+                Hire</a>
+
+            </li>
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" title="Contact me" href="https://www.nzian.xyz/contact-me">
+                <i class="lg:text-gray-300 text-gray-500 fas fa-id-card text-lg leading-lg mr-2"></i>
+                Contact</a>
+            </li>
+          </ul>
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" title="facebook page" href="https://www.facebook.com/devnzian" rel="norefferer noopener" target="_blank">
+                <i class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "></i>
+                <span class="lg:hidden inline-block ml-2">Share</span></a>
+            </li>
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" title="Twitter profile" href="https://twitter.com/devnzian" rel="norefferer noopener" target="_blank">
+                <i class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "></i>
+                <span class="lg:hidden inline-block ml-2">Tweet</span></a>
+            </li>
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" title="Github profile" href="https://github.com/Nzian" rel="norefferer noopener" target="_blank">
+                <i class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "></i>
+                <span class="lg:hidden inline-block ml-2">Star</span></a>
+            </li>
+            <li class="flex items-center">
+              <button class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" name="phone" style="transition: all 0.15s ease 0s;" data-phone="+8801841908292">
+                <i class="fas fa-phone"></i>
+                +8801841908292
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="profile-page">
+      <section class="relative block" style="height: 350px;">
+        <div class="absolute top-0 w-full h-full bg-center bg-cover top-banner">
+          <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+        </div>
+
+      </section>
+      <section class="relative py-16 bg-gray-300">
+        <div class="container mx-auto px-4">
+          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+            <div class="px-6 pt-6">
+              <div class="flex flex-wrap justify-center">
+                <section class="text-gray-600 body-font">
+                  <div class="text-center">
+                    <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Small Office HRM</h1>
+                    <p class="text-base text-left pb-3 leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto">Small or medium office can manage their hrm with this system. You can manage emplyee, employee hiring process, team, attendance, leave, salary, salery calculation, salary slip, office asset, deciplinery, organization chart, role, permissions. But still there are lot of others things related HRM is not listed here. But those can be added as you demand. So feel free to
+                      <a href="https://www.nzian.xyz/contact-me" class="text-indigo-500 inline-flex items-center cursor-pointer">contact</a>
+                      us and discuss further.</p>
+                    <p class="text-base text-left pb-3 leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto">It's self hosted solution. You only need a domain and hosting package to make your business ecommerce website. If you dont know about domain hosting we will help you to buy those as well. If you are interested to use this software for your business you can
+                      <a href="https://www.nzian.xyz/contact-me" class="text-indigo-500 inline-flex items-center cursor-pointer">contact</a>
+                      with me and describe your details need.</p>
+                    <p class="text-base text-left leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto">I have a referrel program as well. If you are refferal any business this solution and they accept it then you get support or consultation free of cost for any php based projects of yours.
+                    </p>
+                  </div>
+                  <div class="container px-5 py-16 mx-auto flex flex-wrap">
+                    <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+                      <a href="http://csmhrm.tritechfirm.com" target="_blank" rel="nofollow"><img alt="Small office hrm" class="object-cover object-center h-full w-full" src="/../../assets/img/small-office-hrm.webp"></a>
+                    </div>
+                    <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+                      <div class="flex flex-col mb-10 lg:items-start items-center">
+                        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewbox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                          </svg>
+                        </div>
+                        <div class="flex-grow">
+                          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Limitations</h2>
+                          <p class="leading-relaxed text-base">Small office hrm is a supportive software for HR department of office. Few tasks will be automated and help HR person's work easy. It's not fully alternative of HR department. But it can be a alternative if we implement all the features of mordern HRM.</p>
+                          <div class="flex flex-wrap lg:w-5/5 sm:mx-auto sm:mb-2 -mx-2">
+                            <div class="p-2 sm:w-2/2 w-full">
+                              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewbox="0 0 24 24">
+                                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                  <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium">Applicant Tracking and Recruiting.</span>
+                              </div>
+                            </div>
+                            <div class="p-2 sm:w-2/2 w-full">
+                              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewbox="0 0 24 24">
+                                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                  <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium">Performance Management.</span>
+                              </div>
+                            </div>
+                            <div class="p-2 sm:w-2/2 w-full">
+                              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewbox="0 0 24 24">
+                                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                  <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium">Benefits Management.</span>
+                              </div>
+                            </div>
+                            <div class="p-2 sm:w-2/2 w-full">
+                              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewbox="0 0 24 24">
+                                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                  <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium">Learning and Professional Development.</span>
+                              </div>
+                            </div>
+                            <div class="p-2 sm:w-2/2 w-full">
+                              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewbox="0 0 24 24">
+                                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                  <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium">Automated Tax Filing.</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col mb-10 lg:items-start items-center">
+                        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewbox="0 0 24 24">
+                            <circle cx="6" cy="6" r="3"></circle>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                          </svg>
+                        </div>
+                        <div class="flex-grow">
+                          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Features</h2>
+                          <p class="leading-relaxed text-base">A fully ready web admin panel where you and your employee can do as follows:</p>
+                          <div class="flex flex-wrap lg:w-5/5 sm:mx-auto sm:mb-2 -mx-2">
+                            <div class="p-2 sm:w-2/2 w-full">
+                              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewbox="0 0 24 24">
+                                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                  <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium">Employee and their document management.</span>
+                              </div>
+                            </div>
+                            <div class="p-2 sm:w-2/2 w-full">
+                              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewbox="0 0 24 24">
+                                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                  <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium">Leave and attendance management.
+                                </span>
+                              </div>
+                            </div>
+                            <div class="p-2 sm:w-2/2 w-full">
+                              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewbox="0 0 24 24">
+                                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                  <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium">Notice management.
+                                </span>
+                              </div>
+                            </div>
+                            <div class="p-2 sm:w-2/2 w-full">
+                              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewbox="0 0 24 24">
+                                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                  <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium">Automated Salary and salary slep generation</span>
+                              </div>
+                            </div>
+                            <div class="p-2 sm:w-2/2 w-full">
+                              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewbox="0 0 24 24">
+                                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                  <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium">Office asset management</span>
+                              </div>
+                            </div>
+                            <div class="p-2 sm:w-2/2 w-full">
+                              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewbox="0 0 24 24">
+                                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                  <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium">Manage Role and permission</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col mb-10 lg:items-start items-center">
+                        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewbox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                          </svg>
+                        </div>
+                        <div class="flex-grow">
+                          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Demo details</h2>
+                          <p class="leading-relaxed text-base">Admin login details as below:</p>
+                          <ul>
+                            <li>
+                              Login Url:
+                              <a href="http://csmhrm.tritechfirm.com" target="_blank" rel="nofollow" class="text-indigo-500 inline-flex items-center cursor-pointer">HRM</a>
+                            </li>
+                            <li>
+                              <p class="leading-relaxed text-base">Username: robin2.csm@gmail.com</p>
+                            </li>
+                            <li>
+                              <p class="leading-relaxed text-base">Password: csm@hrm@47</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="relative bg-gray-300 pt-8 pb-6">
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0px);">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveaspectratio="none" version="1.1" viewbox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4 py-4">
+            <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+            <h5 class="text-lg mt-0 mb-2 text-gray-700">
+              Find me on any of these platforms, I respond as soon as possible.
+            </h5>
+            <div class="mt-6">
+              <button class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button" name="twitter-footer" data-url="https://twitter.com/devnzian">
+                <i class="flex fab fa-twitter"></i>
+              </button>
+              <button class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button" name="fb-footer" data-url="https://www.facebook.com/devnzian">
+                <i class="flex fab fa-facebook-square"></i>
+              </button>
+              <button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button" name="insta-footer" data-url="https://www.instagram.com/devnzian/">
+                <i class="flex fab fa-instagram"></i>
+              </button>
+              <button class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button" name="github-footer" data-url="https://github.com/Nzian">
+                <i class="flex fab fa-github"></i>
+              </button>
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 py-4 ml-auto">
+                <span class="block uppercase text-gray-700 text-sm font-semibold mb-2">Useful Links</span>
+                <ul class="list-unstyled">
+                  <li class="text-sm">
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block" title="About Me" href="https://www.nzian.xyz/about">About Me</a>
+                  </li>
+                  <li class="text-sm pt-3">
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block" title="Blog" href="https://dev.nzian.xyz/">Blog</a>
+                  </li>
+                  <li class="text-sm pt-3">
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block" title="Github profile" href="https://github.com/Nzian" target="_blank" rel="noopener norefferer">Github</a>
+                  </li>
+                  <!--<li> <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free" >Free Products</a > </li>-->
+                </ul>
+              </div>
+              <div class="w-full lg:w-4/12 px-4 py-4">
+                <span class="block uppercase text-gray-700 text-sm font-semibold mb-2">Other Resources</span>
+                <ul class="list-unstyled">
+                  <li class="text-sm">
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block" title="Linkedin Profile" href="https://www.linkedin.com/in/zia-uddin-177437b/" rel="noopener norefferer" target="_blank">Linkedin</a>
+                  </li>
+                  <li class="text-sm pt-3">
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block" title="Terms and conditions" href="https://www.nzian.xyz/terms">Terms &amp; Conditions</a>
+                  </li>
+                  <li class="text-sm pt-3">
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block" title="Privacy Policy" href="https://www.nzian.xyz/privacy">Privacy Policy</a>
+                  </li>
+                  <li class="text-sm pt-3">
+                    <a class="text-gray-700 hover:text-gray-900 font-semibold block" title="Contact Me" href="https://www.nzian.xyz/contact-me">Contact Me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-400"/>
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-700 font-semibold py-1">
+              Copyright ©2020
+              <a href="https://www.nzian.xyz" title="NZIAN Home page" class="text-gray-700 hover:text-gray-900">NZIAN</a>
+              build with
+              <a href="https://github.com/creativetimofficial/tailwind-starter-kit" title="Tailwindcss starter Kit" class="text-gray-600 hover:text-gray-900" rel="noopener norefferer" target="_blank">Tailwind Starter Kit
+              </a>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module">
+      import {getCLS, getFID, getLCP} from 'https://unpkg.com/web-vitals?module';
+
+      function sendToGoogleAnalytics({name, delta, id}) {
+        // Assumes the global `gtag()` function exists, see:
+        // https://developers.google.com/analytics/devguides/collection/gtagjs
+        gtag('event', name, {
+          event_category: 'Web Vitals',
+          // Google Analytics metrics must be integers, so the value is rounded.
+          // For CLS the value is first multiplied by 1000 for greater precision
+          // (note: increase the multiplier for greater precision if needed).
+          value: Math.round(
+            name === 'CLS'
+            ? delta * 1000
+            : delta),
+          // The `id` value will be unique to the current page load. When sending
+          // multiple values from the same page (e.g. for CLS), Google Analytics can
+          // compute a total by grouping on this ID (note: requires `eventLabel` to
+          // be a dimension in your report).
+          event_label: id,
+          // Use a non-interaction event to avoid affecting bounce rate.
+          non_interaction: true
+        });
+      }
+
+      getCLS(sendToGoogleAnalytics);
+      getFID(sendToGoogleAnalytics);
+      getLCP(sendToGoogleAnalytics);
+    </script>
+    <script>
+      // header mobile nav toggle.
+      function toggleNavbar(collapseID) {
+        document
+          .getElementById(collapseID)
+          .classList
+          .toggle("hidden");
+        document
+          .getElementById(collapseID)
+          .classList
+          .toggle("block");
+      }
+
+      // add event function for url load in a new tab and phone number in a new tab
+
+      function buttonEvent(element) {
+        if (element && "url" in element.dataset) {
+          element.addEventListener('click', function () {
+            window.open(element.dataset.url, '_blank');
+          });
+        } else if (element && "phone" in element.dataset) {
+          element.addEventListener('click', function () {
+            window.open("tel:" + element.dataset.phone, '_blank');
+          })
+        }
+      }
+
+      // have some button which has url and need to open those url in a new tab on click event.
+
+      //first get the element which is clicked
+      const urlButtons = document.querySelectorAll('button[data-url]');
+      const phoneButton = document.querySelector('button[data-phone]');
+      //const sendButton = document.querySelector('button[name=send-message]');
+      //console.log(sendButton);
+      //console.log(phoneButton);
+      // set an click eventlistner to load the url a new tab for urlButton
+      try {
+        urlButtons.forEach(buttonEvent);
+        buttonEvent(phoneButton);
+      } catch (err) {
+        console.log(err);
+      }
+    </script>
+  </body>
+
+</html>
