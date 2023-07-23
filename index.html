@@ -81,7 +81,8 @@
 <!-- Google tag (gtag.js) -->
 <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-SJN16B2W7E"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
+if(!window.location.href.includes('.dev.')) {
+  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
@@ -105,6 +106,7 @@ fbq('track', 'PageView');
 })(window, document, "clarity", "script", "6au476prh5");
 
 window.$crisp=[];window.CRISP_WEBSITE_ID="a05986f5-d8d2-438c-ba0a-d91728e4a6b6";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+}
 </script>
 </head>
 
