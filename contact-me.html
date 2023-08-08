@@ -383,9 +383,11 @@ build with
     });
   }
 
+if(gtag !== undefined) {
   getCLS(sendToGoogleAnalytics);
   getFID(sendToGoogleAnalytics);
   getLCP(sendToGoogleAnalytics);
+}
 </script>
 <script>
     // header mobile nav toggle.

@@ -75,8 +75,6 @@
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
     <link rel="stylesheet" href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/tailwind.min.css" />
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- Google tag (gtag.js) -->
 <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-SJN16B2W7E"></script>
 <script>
@@ -85,7 +83,7 @@ window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-gtag('config', 'G-SJN16B2W7E');
+gtag('config', 'G-SJN16B2W7E')
 
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -114,7 +112,7 @@ window.$crisp=[];window.CRISP_WEBSITE_ID="a05986f5-d8d2-438c-ba0a-d91728e4a6b6";
             <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
 <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" title="NZIAN Home page" href="/">NZIAN</a>
 <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none">
-                    type="button" name="toggle-nav" onclick="toggleNavbar('example-collapse-navbar')">
+<button type="button" name="toggle-nav" onclick="toggleNavbar('example-collapse-navbar')">
           <i class="text-white fas fa-bars"></i>
         </button>
             </div>
@@ -341,9 +339,11 @@ build with
     });
   }
 
+if(gtag !== undefined) {
   getCLS(sendToGoogleAnalytics);
   getFID(sendToGoogleAnalytics);
   getLCP(sendToGoogleAnalytics);
+}
 </script>
 <script>
     // header mobile nav toggle.
