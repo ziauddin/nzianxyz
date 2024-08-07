@@ -79,6 +79,12 @@ window.dataLayer = window.dataLayer || [];
   gtag('js', new Date());
 
 gtag('config', 'G-D2HJN0YE5V');
+gtag('event', 'page_view', {
+page_title: document.title,
+page_location: location.href,
+page_path: location.pathname,
+send_to: 'G-D2HJN0YE5V'
+});
 
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
